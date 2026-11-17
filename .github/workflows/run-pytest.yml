@@ -1,7 +1,14 @@
+
 name: Run pytest
 
 on:
   push:
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - '.github/workflows/run-pytest.yml'
+
+  workflow_dispatch:
 
 jobs:
   test:
