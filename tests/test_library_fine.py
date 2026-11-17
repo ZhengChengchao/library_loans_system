@@ -37,5 +37,3 @@ def test_calculate_fine_invalid_type(invalid_days):
     # Act & Assert
     with pytest.raises(TypeError):
         calculate_fine(invalid_days)
-
-# test 1
